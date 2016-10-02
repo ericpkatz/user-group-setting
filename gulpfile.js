@@ -6,7 +6,7 @@ var config = {
   jsFiles: ['./browser/app.js', './browser/**/*.js'],
   indexFile: './browser/index.html',
   clientDir: './browser'
-}
+};
 
 function _inject(){
   var target = gulp.src(config.indexFile);
