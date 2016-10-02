@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "SYNC=true DATABASE_URL=postgres://localhost/auth_db SECRET=foo PORT=3000 nodemon --ignore 'browser' server"
   },
