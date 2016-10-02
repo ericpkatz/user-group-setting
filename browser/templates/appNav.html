@@ -1,0 +1,14 @@
+<ul style='margin-bottom:10px' class='nav nav-tabs'>
+  <li ui-sref-active='active'>
+    <a ui-sref='home'>Home</a>
+  </li>
+  <li ui-sref-active='active' ng-if='user.id'>
+    <a ui-sref='settings'>Settings</a>
+  </li>
+  <li ui-sref-active='active' ng-if='!user.id'>
+    <a ui-sref='loginRegister'>Login / Register</a>
+  </li>
+  <li ng-if='user.id'>
+    <a href='#' ng-click='logout()'>Logout {{ user.username }} ({{ user.group.name }})</a>
+  </li>
+</ul>

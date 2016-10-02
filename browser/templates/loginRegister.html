@@ -1,0 +1,14 @@
+<div class='well'>
+  <form name='form'>
+    <div class='form-group'>
+      <input class='form-control' ng-model='credentials.username' required placeholder='username'/>
+    </div>
+    <div class='form-group'>
+      <input class='form-control' ng-model='credentials.password' required placeholder='password'/>
+    </div>
+    <button class='btn btn-primary' ng-click='login()' ng-disabled='form.$invalid'>Login</button>
+  </form>
+</div>
+<div class='well'>
+  Register
+</div>
